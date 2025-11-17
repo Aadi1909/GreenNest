@@ -1,128 +1,87 @@
-🌿 GreenNest – Houseplant E-Commerce Web App
+# 🌿 GreenNest – Houseplant E-Commerce Web App
 
-GreenNest is a fully functional React + Vite + Redux Toolkit houseplant shopping web application.
-It includes a landing page, product listing page, shopping cart functionality, and clean navigation — all deployable on Netlify.
+GreenNest is a fully functional **React + Vite + Redux Toolkit** houseplant shopping web application.  
+It includes a landing page, product listing page, shopping cart functionality, and clean navigation — all deployable on **Netlify**.
 
-🚀 Features
-✅ Landing Page
+---
 
-Full-screen plant-themed background image
+## 🚀 Features
 
-Company name: GreenNest Plants
+### ✅ Landing Page
+- Full-screen plant-themed background image  
+- Company name: **GreenNest Plants**  
+- Short description paragraph  
+- **Get Started** button → Navigates to product listing page  
 
-Short description paragraph
+---
 
-Get Started button → Navigates to product listing page
+### 🛒 Product Listing Page
+- Displays **six unique houseplants**
+- Each plant includes:
+  - Thumbnail  
+  - Name  
+  - Price  
+  - Add to Cart button  
 
-🛒 Product Listing Page
+- Plants grouped into **three or more categories**
 
-Displays six unique houseplants
+- Add to Cart behavior:
+  - Cart icon number increases  
+  - Button becomes disabled  
+  - Plant added to Redux cart  
 
-Each plant has:
+---
 
-Thumbnail
-
-Name
-
-Price
-
-Add to Cart button
-
-Plants grouped into three or more categories
-
-Add to Cart behavior:
-
-Cart icon number increases
-
-Button becomes disabled
-
-Plant added to Redux cart
-
-🌱 Shopping Cart Page
-
+### 🌱 Shopping Cart Page
 Shows:
 
-Total number of plants in cart
+- Total number of plants in cart  
+- Total cost  
 
-Total cost
+Each plant in the cart displays:
 
-Each plant in the cart shows:
-
-Thumbnail
-
-Name
-
-Unit price
-
-Quantity
+- Thumbnail  
+- Name  
+- Unit price  
+- Quantity  
 
 Controls for each plant:
 
-Increase (+) quantity
+- Increase (+) quantity  
+- Decrease (–) quantity  
+- Delete item  
 
-Decrease (–) quantity
+Dynamic updates handled by **Redux**:
+- Quantity changes  
+- Total cost  
+- Cart badge count  
 
-Delete item
+Other buttons:
+- **Checkout** → Displays “Coming Soon”  
+- **Continue Shopping** → Navigates back to product listing page  
 
-Updates totals and badge count dynamically using Redux
+---
 
-“Checkout” button → Displays “Coming Soon”
+## 🧭 Header (Shared on Non-Landing Pages)
 
-“Continue Shopping” → Back to product listing page
+- Company name  
+- Navigation links:
+  - Home  
+  - Products  
+  - Cart  
+- Cart icon with **dynamic item count** using Redux selectors  
 
-🧭 Header (Shared on all pages except landing)
+---
 
-Company name
+## 🧱 Tech Stack
 
-Navigation links:
+| Technology        | Purpose                       |
+|------------------|--------------------------------|
+| **React**        | Frontend UI                    |
+| **Vite**         | Fast dev server & build tool   |
+| **Redux Toolkit**| State management               |
+| **React Router** | Page routing                   |
+| **CSS / Tailwind CSS** | Styling                  |
+| **Netlify**      | Deployment                     |
 
-Home
-
-Products
-
-Cart
-
-Cart icon with dynamic item count (Redux selector)
-
-🧱 Tech Stack
-Technology	Purpose
-React	Frontend UI
-Vite	Fast dev server & build tool
-Redux Toolkit	State management
-React Router DOM	Page routing
-CSS / Tailwind CSS	Styling
-Netlify	Deployment
-📂 Project Structure
-GreenNest/
-│── public/
-│── src/
-│   ├── components/
-│   │   └── Header.jsx
-│   ├── pages/
-│   │   ├── LandingPage.jsx
-│   │   ├── ProductListingPage.jsx
-│   │   └── CartPage.jsx
-│   ├── store/
-│   │   ├── cartSlice.js
-│   │   └── index.js
-│   ├── data/
-│   │   └── plants.js
-│   ├── App.jsx
-│   └── main.jsx
-│── package.json
-│── vite.config.js
-│── README.md
-
-📦 Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/GreenNest.git
-cd GreenNest
-
-2️⃣ Install Dependencies
-npm install
-
-3️⃣ Run Development Server
-npm run dev
-
-4️⃣ Build for Production
-npm run build
+---
