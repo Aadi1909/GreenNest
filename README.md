@@ -1,30 +1,128 @@
-# E-commerce app build
+🌿 GreenNest – Houseplant E-Commerce Web App
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+GreenNest is a fully functional React + Vite + Redux Toolkit houseplant shopping web application.
+It includes a landing page, product listing page, shopping cart functionality, and clean navigation — all deployable on Netlify.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/aadi1909s-projects/v0-e-commerce-app-build)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/odi6YFFZFKt)
+🚀 Features
+✅ Landing Page
 
-## Overview
+Full-screen plant-themed background image
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Company name: GreenNest Plants
 
-## Deployment
+Short description paragraph
 
-Your project is live at:
+Get Started button → Navigates to product listing page
 
-**[https://vercel.com/aadi1909s-projects/v0-e-commerce-app-build](https://vercel.com/aadi1909s-projects/v0-e-commerce-app-build)**
+🛒 Product Listing Page
 
-## Build your app
+Displays six unique houseplants
 
-Continue building your app on:
+Each plant has:
 
-**[https://v0.app/chat/odi6YFFZFKt](https://v0.app/chat/odi6YFFZFKt)**
+Thumbnail
 
-## How It Works
+Name
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Price
+
+Add to Cart button
+
+Plants grouped into three or more categories
+
+Add to Cart behavior:
+
+Cart icon number increases
+
+Button becomes disabled
+
+Plant added to Redux cart
+
+🌱 Shopping Cart Page
+
+Shows:
+
+Total number of plants in cart
+
+Total cost
+
+Each plant in the cart shows:
+
+Thumbnail
+
+Name
+
+Unit price
+
+Quantity
+
+Controls for each plant:
+
+Increase (+) quantity
+
+Decrease (–) quantity
+
+Delete item
+
+Updates totals and badge count dynamically using Redux
+
+“Checkout” button → Displays “Coming Soon”
+
+“Continue Shopping” → Back to product listing page
+
+🧭 Header (Shared on all pages except landing)
+
+Company name
+
+Navigation links:
+
+Home
+
+Products
+
+Cart
+
+Cart icon with dynamic item count (Redux selector)
+
+🧱 Tech Stack
+Technology	Purpose
+React	Frontend UI
+Vite	Fast dev server & build tool
+Redux Toolkit	State management
+React Router DOM	Page routing
+CSS / Tailwind CSS	Styling
+Netlify	Deployment
+📂 Project Structure
+GreenNest/
+│── public/
+│── src/
+│   ├── components/
+│   │   └── Header.jsx
+│   ├── pages/
+│   │   ├── LandingPage.jsx
+│   │   ├── ProductListingPage.jsx
+│   │   └── CartPage.jsx
+│   ├── store/
+│   │   ├── cartSlice.js
+│   │   └── index.js
+│   ├── data/
+│   │   └── plants.js
+│   ├── App.jsx
+│   └── main.jsx
+│── package.json
+│── vite.config.js
+│── README.md
+
+📦 Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/GreenNest.git
+cd GreenNest
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Development Server
+npm run dev
+
+4️⃣ Build for Production
+npm run build
